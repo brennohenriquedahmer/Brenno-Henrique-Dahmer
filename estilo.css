@@ -1,0 +1,331 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100;300;400&family=BenchNine:wght@400;700&family=Pathway+Gothic+One&family=Roboto+Mono:wght@500;700&family=Roboto:wght@300;400;700&display=swap");
+
+/* Definindo as fontes importadas do Google Fonts */
+
+::-webkit-scrollbar {
+  width: 0;
+}
+/* Ocultando a barra de rolagem do navegador */
+
+* {
+  margin: 300;
+  padding: 50;
+  box-sizing: border-box;
+}
+/* Definindo uma redefinição de margens, preenchimentos e modelo de caixa para todos os elementos */
+
+:root {
+  /* Definindo variáveis CSS personalizadas para uso posterior no código */
+  --background-color: #ffffff;
+  --secondary-color: #ffffff;
+  --font-color: #000000;
+  --primary-color: #000000;
+  --terc-color: #000000;
+  --extra-color: #000000;
+  --title-font: "Roboto Mono", monospace;
+  --text-font: "Roboto", sans-serif;
+  --alt-font: "BenchNine", sans-serif;
+  --nav-font: "Antonio", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Habilitando a rolagem suave na página */
+
+body {
+  background-color: var(--background-color);
+  height: 100%;
+  display: center;
+}
+/* Estilizando o corpo da página, definindo uma cor de fundo e a exibição como flexbox */
+
+.nav-bar {
+  background-color: var(--secondary-color);
+  height: 100%;
+  width: 12vw;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0px 05px 0px rgba(0, 0, 0, 0.993);
+  position: fixed;
+  right: 05;
+}
+/* Estilizando a barra de navegação, com uma cor de fundo, sombra e posição fixa */
+
+
+.nav-bar .links {
+  text-decoration: none;
+  color: var(--font-color);
+  padding: 25px 20px 20px 20px;
+  font-family: var(--nav-font);
+  font-size: 1.2em;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  height: 80px;
+  border-bottom: 1px solid var(--extra-color);
+  position: static;
+}
+/* Estilizando os links na barra de navegação */
+
+.nav-bar .links:hover {
+  color: var(--terc-color);
+  background-color: var(--background-color);
+  transition: 0.4s;
+}
+/* Estilizando os links na barra de navegação quando o mouse está sobre eles */
+
+.content {
+  width: 100vw;
+  display: center;
+  flex-direction: column;
+}
+/* Estilizando a seção de conteúdo principal da página */
+
+.cover-section {
+  height: 720px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* Estilizando a seção de capa da página */
+
+.main-title {
+  color: var(--font-color);
+  font-size: 4.6em;
+  font-family: var(--title-font);
+}
+/* Estilizando o título principal da página */
+
+.letter-a {
+  color: var(--terc-color);
+  font-size: 1.2em;
+}
+/* Estilizando a letra "A" do título principal */
+
+.title-description {
+  color: var(--font-color);
+  font-size: 3em;
+  font-family: var(--title-font);
+  padding-top: 10px;
+}
+/* Estilizando a descrição abaixo do título principal */
+
+.about {
+  height: fit-content;
+  font-family: var(--text-font);
+  margin-top: 50px;
+  text-align: center;
+  line-height: 1em;
+}
+/* Estilizando a seção "Sobre" */
+
+.about h2 {
+  color: var(--font-color);
+  font-size: 3.2em;
+  text-align: center;
+  line-height: 1em;
+  padding-bottom: 40px;
+}
+/* Estilizando o título da seção "Sobre" */
+
+.about-content {
+  color: var(--font-color);
+  text-align: justify;
+  line-height: 2em;
+  width: 60%;
+  margin: auto;
+  padding: 20px 20px 400px 20px;
+}
+/* Estilizando o conteúdo da seção "Sobre" */
+
+.div-photo {
+  text-align: center;
+  margin: 60px 60px 60px 60px;
+}
+/* Estilizando a foto */
+
+.photo {
+  width: 300px;
+  border: 8px outset var(--terc-color);
+}
+/* Estilizando a foto */
+
+.cv {
+  height: fit-content;
+  font-family: var(--text-font);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+/* Estilizando a seção "Currículo" */
+
+.cv-content {
+  color: var(--font-color);
+  text-align: justify;
+  line-height: 2em;
+  width: 50%;
+  padding: 20px;
+}
+/* Estilizando o conteúdo da seção "Currículo" */
+
+.cv h2 {
+  color: var(--font-color);
+  font-size: 3.2em;
+  text-align: center;
+  line-height: 1em;
+  padding-bottom: 40px;
+}
+/* Estilizando o título da seção "Currículo" */
+
+.cv-list {
+  padding-bottom: 30px;
+}
+/* Estilizando a lista de informações acadêmicas no currículo */
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
+  align-content: flex-start;
+  margin-top: 100px;
+}
+
+.portfolio h2 {
+  color: var(--font-color);
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 2.8em;
+  margin-bottom: 40px;
+}
+
+.portfolio .projects {
+  width: 50%;
+  display: center;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.portfolio .projects:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio .project-header img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.portfolio .project-content {
+  padding: 50px;
+}
+
+.portfolio .project-content h3 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.portfolio .project-content p {
+  margin: 0;
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+
+.portfolio .project-link {
+  margin-top: 20px;
+}
+
+.portfolio .project-link a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.2em;
+  transition: transform 0.2s;
+  margin-right: 10px;
+}
+
+.portfolio .project-link a img {
+  width: 50px;
+  height: 50px;
+}
+
+.portfolio .project-link a:hover {
+  transform: translateX(3px);
+}
+
+.contact {
+  height: fit-content;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+/* Estilizando a seção "Contato" */
+
+.contact h2 {
+  color: var(--font-color);
+  font-size: 3.2em;
+  text-align: center;
+  line-height: 1em;
+  padding-bottom: 40px;
+}
+/* Estilizando o título da seção "Contato" */
+
+.contact-form {
+  width: 50%;
+  background-color: var(--secondary-color);
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: var(--font-color);
+  margin-bottom: 20px;
+}
+/* Estilizando o formulário de contato */
+
+.contact-form label {
+  display: block;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+/* Estilizando os rótulos no formulário de contato */
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid var(--extra-color);
+  border-radius: 5px;
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+/* Estilizando os campos de entrada no formulário de contato */
+
+.contact-form textarea {
+  height: 150px;
+}
+/* Ajustando a altura do campo de entrada de mensagem no formulário de contato */
+
+.contact-form .submit-button {
+  background-color: var(--secondary-color);
+  color: var(--terciary-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1.2em;
+  border: 1px outset var(--terc-color);
+}
+/* Estilizando o botão de envio no formulário de contato */
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+/* Estilizando os grupos de formulário no formulário de contato */

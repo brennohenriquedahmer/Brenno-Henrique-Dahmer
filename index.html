@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Definindo a codificação de caracteres para UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Definindo a compatibilidade com o Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configurando a viewport para dispositivos móveis -->
+    <link rel="stylesheet" href="estilo.css" />
+    <!-- Incluindo um arquivo CSS externo -->
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <!-- Adicionando um ícone de favoritos na barra de título -->
+
+    <title>Brenno Henrique Dahmer</title>
+    <!-- Definindo o título da página -->
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <!-- Incluindo um logotipo na barra de navegação -->
+      <a class="links" href="#about">Sobre</a>
+      <!-- Criando um link para a seção "Sobre" na página -->
+      <a class="links" href="#cv">Currículo</a>
+      <!-- Criando um link para a seção "Currículo" na página -->
+      <a class="links" href="#portfolio">Portfólio</a>
+      <!-- Criando um link para a seção "Portfólio" na página -->
+      <a class="links" href="#contact">Contato</a>
+      <!-- Criando um link para a seção "Contato" na página -->
+    </nav>
+
+    <main class="content">
+      <section class="cover-section">
+        <div>
+          <h1 class="main-title">
+            Olá, sou o Brenno!<br />
+          </h1>
+          <!-- Título principal da página -->
+          <p class="title-description">Estudante de Análise e desenvolvimento de Sistemas</p>
+          <!-- Descrição abaixo do título -->
+        </div>
+      </section>
+      <section class="about" id="about">
+        <h2>Algumas informações sobre mim</h2>
+        <!-- Título da seção "Sobre" -->
+        <div class="div-photo">
+          <img src="foto-apresentação.jpg" alt="dev-photo" class="photo" />
+          <!-- Incluindo uma foto caracteristica -->
+        </div>
+        <article class="about-content">
+          <p>
+            Gosto muito de carros, tecnologia e fotografia. Espero um dia conseguir juntar esses hobbies.<br />
+            Sou formado como Técnico em Administração e atualmente sou Técnico de Manutenção
+            Elétrica. Estou em busca de novas oportunidade que a área de TI possa me entregar
+            como estudante de Análise e Desenvolvimento de Sistemas na Uninter.
+          </p>
+          <!-- Conteúdo sobre mim -->
+          <p>
+            Nas horas vagas gosto de assistir conteúdos sobre carros e principalmente
+            campeonatos de arrancada, já que era meu lugar favorito quando criança.
+          </p>
+          <!-- Mais informações sobre mim -->
+        </article>
+      </section>
+
+      <section class="cv" id="cv">
+        <article class="cv-content">
+          <h2>Currículo</h2>
+          <!-- Título da seção de currículo -->
+          <h3>Formação</h3>
+          <!-- Título para a seção de formação acadêmica -->
+          <hr />
+          <!-- Linha horizontal para separação visual -->
+          <ul class="cv-list">
+            <li>
+              <strong
+                >Tecnólogo Análise e Desenvolvimento de Sistemas (em
+                andamento)</strong
+              >
+              <br />
+              UNINTER - Centro Universitário Internacional
+              <br />
+              Conclusão: 06/2026
+            </li>
+            <li>
+              <strong>Técnico em Administração</strong>
+              <br />
+              Colégio Estadual Deputado Arndaldo F. Busato
+              <br />
+              Conclusão: 11/2020
+            </li>
+          </ul>
+          <!-- Lista de informações acadêmicas -->
+          <h3>Idiomas</h3>
+          <!-- Título para a seção de idiomas -->
+          <hr />
+          <!-- Linha horizontal para separação visual -->
+          <ul class="cv-list">
+            <li>Inglês Intermediário</li>
+          </ul>
+          <!-- Lista de idiomas que a desenvolvedora conhece -->
+        </article>
+      </section>
+
+ <section class="portfolio" id="portfolio">
+        <h2>Portfólio</h2>
+        <div class="projects">
+          <div class="project-header">
+          </div>
+          <div class="project-content">
+            <h3>Audiovisual em um retiro</h3>
+            <p>
+              Trabalhei como fotografo e responsável por registrar momentos e montar
+              um video para ser apresentado as outras equipes do retiro.
+            </p>
+          </div>
+        </div>
+              <iframe src= "https://youtube.com/embed/NGXGCJK0lxc" frameborder="0" widht="180" height="120" ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Contato</h2>
+        <!-- Título da seção de contato -->
+        <form action="#" method="post" class="contact-form">
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <!-- Rótulo para o campo de nome -->    
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Seu nome"
+              required
+            />
+            <!-- Campo de entrada para o nome (obrigatório) -->
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <!-- Rótulo para o campo de email -->
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Seu email"
+              required
+            />
+            <!-- Campo de entrada para o email (obrigatório) -->
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <!-- Rótulo para o campo de mensagem -->
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Sua mensagem"
+              required
+            ></textarea>
+            <!-- Campo de entrada para a mensagem (obrigatório) -->
+          </div>
+          <button type="submit" class="submit-button">Enviar</button>
+          <!-- Botão de envio do formulário -->
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
