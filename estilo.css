@@ -99,11 +99,6 @@ body {
 }
 /* Estilizando o título principal da página */
 
-.letter-a {
-  color: var(--terc-color);
-  font-size: 1.2em;
-}
-/* Estilizando a letra "A" do título principal */
 
 .title-description {
   color: var(--font-color);
@@ -148,7 +143,7 @@ body {
 /* Estilizando a foto */
 
 .photo {
-  width: 300px;
+  width: 510px;
   border: 8px outset var(--terc-color);
 }
 /* Estilizando a foto */
@@ -251,8 +246,8 @@ body {
 }
 
 .portfolio .project-link a img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
 }
 
 .portfolio .project-link a:hover {
